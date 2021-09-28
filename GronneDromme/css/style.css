@@ -4,9 +4,12 @@ body{
     
     margin:  0px;
     padding: 0px;
-color: darkslategray;
+    color: darkslategray;
     background-image: url(../img/Forside-hoejbed1.jpg);
     background-attachment: fixed;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 header{
@@ -14,27 +17,9 @@ header{
     margin-top: 70px;
     background-color: rgb(0, 95, 63);
     padding-bottom: 1px;
-}
-
-main{
-    max-width: 1000px;
-    text-align: center;
-    /* align-items: center; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-    background-color: whitesmoke;
-}
-
-img{
+    padding-top: 1px;
     
-    height: auto;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
 }
-    article img{
-        margin-top: 30px;
-    }
 
 nav{
     
@@ -54,9 +39,43 @@ nav{
         color: mintcream;
         text-decoration: none;
         text-align: center;
+        font-family: 'Coming Soon', sans-serif;
+
         border: wheat;
         border-style: groove;
         }
+
+main{
+    max-width: 1000px;
+    text-align: center;
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+
+
+img{
+    
+    height: auto;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+    article img{
+        margin-top: 30px;
+    }
+    a img{
+        margin-top: 0px;
+        height: 283px;
+    }
+    
+p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 h1, h2 {
     color: rgb(119, 184, 0);
@@ -64,15 +83,27 @@ h1, h2 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    
+    
+
+    font-family: 'Julius Sans One', sans-serif;
 }
-        article h1 {
-        font-size: xx-large;
-        }
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1,5rem;
+}
+
+
 ul{
     list-style-type: none;
-    padding: 50px;
+    padding: 10px;
     overflow: hidden;
-    margin-left: 120px;
+    margin-left: 30px;
     
 }
 li{
@@ -81,12 +112,9 @@ li{
 li a {
     color:mediumseagreen;
     text-decoration: none;
-    display: block;
+    display: block; 
     padding: 11px;
 }
-        a img{
-        margin-top: 0px;
-        }
 
 footer{
     background-color: darkgreen;
