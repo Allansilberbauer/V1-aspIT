@@ -4,4 +4,6 @@
 
 front page of GrønneDrømme 
 
-![Screenshot 2021-09-22 at 12-57-26 GronneDromme](https://user-images.githubusercontent.com/91183100/134331835-9951aa4b-0f9f-4745-ab2c-7ff89aaa3b17.png)
+![Screenshot 2021-09-28 at 14-48-09 GronneDromme](https://user-images.githubusercontent.com/91183100/135090050-112af938-af34-4fa2-a25c-6928c4199d7b.png)
+
+
