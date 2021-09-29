@@ -4,46 +4,52 @@ body{
     
     margin:  0px;
     padding: 0px;
-    color: darkslategray;
+ 
     background-image: url(../img/Forside-hoejbed1.jpg);
     background-attachment: fixed;
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: hsl(140, 9%, 12%);
 }
 
 header{
     text-align: center;
     margin-top: 70px;
-    background-color: rgb(0, 95, 63);
+    background-color: hsl(150, 49%, 27%);
     padding-bottom: 1px;
     padding-top: 1px;
     
+}
+ a:hover{
+    color: hsl(81, 100%, 36%);
 }
 
 nav{
     
     text-align: center;
-    background-color: olive;
+    background-color: hsl(105, 17%, 55%);
     padding: 24px;
     position: fixed;
     width: 100%;
     top: 0px;
-    border: black;
-    border-style: solid;
+    
 }
 
         nav a {
-        background-color: darkgreen;
+        background-color: hsl(150, 49%, 27%);
         padding: 15px;
-        color: mintcream;
+        color: hsl(40, 8%, 93%);
         text-decoration: none;
+
         text-align: center;
         font-family: 'Coming Soon', sans-serif;
 
-        border: wheat;
+        border: hsl(40, 8%, 93%);
         border-style: groove;
+        
         }
+        
 
 main{
     max-width: 1000px;
@@ -52,7 +58,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
-    background-color: whitesmoke;
+    background-color: hsl(40, 8%, 93%);
 }
 
 
@@ -78,8 +84,8 @@ p{
 }
 
 h1, h2 {
-    color: rgb(119, 184, 0);
-    background-color:rgb(0, 95, 63) ;
+    color: hsl(81, 100%, 36%);
+    
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -110,17 +116,18 @@ li{
     float: left;
 }
 li a {
-    color:mediumseagreen;
+    color: hsl(150, 49%, 27%);
     text-decoration: none;
     display: block; 
     padding: 11px;
 }
 
 footer{
-    background-color: darkgreen;
+    background-color: hsl(150, 49%, 27%);
     padding: 6px;
     text-align: center;
-    color: orange;
+    color: hsl(40, 8%, 93%);
+    margin-top: 10px;
 }   
 
 
