@@ -1,24 +1,31 @@
 
 
 body{
+
+/*
+plaser et billede som baggrund til helle hjemmesiden der føljer med brugeren*/
     
-    margin:  0px;
-    padding: 0px;
  
     background-image: url(../img/Forside-hoejbed1.jpg);
     background-attachment: fixed;
 
+    
+    margin:  0px;
+    padding: 0px;
+    
+
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: hsl(140, 9%, 12%);
+
+
 }
 
 header{
-    text-align: center;
+    
     margin-top: 70px;
     background-color: hsl(150, 49%, 27%);
-    padding-bottom: 1px;
-    padding-top: 1px;
+    text-align: center;
     
 }
  a:hover{
@@ -26,7 +33,6 @@ header{
 }
 
 nav{
-    
     text-align: center;
     background-color: hsl(105, 17%, 55%);
     padding: 24px;
@@ -38,46 +44,32 @@ nav{
 
         nav a {
         background-color: hsl(150, 49%, 27%);
-        padding: 15px;
+        padding: 10px;
+        margin-left: 1rem;
+        margin-right: 1rem;
         color: hsl(40, 8%, 93%);
         text-decoration: none;
+        text-transform: uppercase;
 
-        text-align: center;
         font-family: 'Coming Soon', sans-serif;
 
         border: hsl(40, 8%, 93%);
         border-style: groove;
-        
         }
         
 
 main{
     max-width: 1000px;
-    text-align: center;
     /* align-items: center; */
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
     background-color: hsl(40, 8%, 93%);
 }
-
-
-
-img{
-    
-    height: auto;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
+article{
+    text-align: center;
 }
-    article img{
-        margin-top: 30px;
-    }
-    a img{
-        margin-top: 0px;
-        height: 283px;
-    }
-    
-p{
+article p{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -90,19 +82,41 @@ h1, h2 {
     margin-left: auto;
     margin-right: auto;
     
+    text-shadow: -2px -2px  2px blue;
     
 
     font-family: 'Julius Sans One', sans-serif;
 }
 h1{
     font-size: 3rem;
+    line-height: 4rem;
 }
 h2{
     font-size: 2rem;
+    line-height: 4rem;
 }
 h3{
     font-size: 1,5rem;
+    line-height: 4rem;
 }
+.large{
+    font-size: large;
+}
+.margin0{
+    margin: 0px;
+}
+
+img{
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+    a img{
+        margin-top: 0px;
+    }
+
+
 
 
 ul{
@@ -119,15 +133,63 @@ li a {
     color: hsl(150, 49%, 27%);
     text-decoration: none;
     display: block; 
+    /* mellemrum mellem individuelle elementer i en liste */
     padding: 11px;
 }
+
 
 footer{
     background-color: hsl(150, 49%, 27%);
     padding: 6px;
-    text-align: center;
     color: hsl(40, 8%, 93%);
     margin-top: 10px;
+    text-align: center;
 }   
 
+
+
+.sidebar{
+    background-color: gray;
+    height: 150vh;
+}
+
+.sidebar p{
+    float: left;
+}
+
+
+.blog article{
+    text-align: left;
+    
+}
+
+
+.blog img{
+    float: left;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.blog span img{
+    float: right;
+}
+
+div{
+    float: left;
+    width: 12rem;
+
+
+}
+div p{
+    float: right;
+}
+
+div img{
+    float: left;
+
+}
+.blogsite div h3{
+    color: hsl(81, 100%, 36%);
+    font-family: 'Coming Soon', sans-serif;
+}
 
