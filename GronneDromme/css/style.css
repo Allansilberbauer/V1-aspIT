@@ -21,15 +21,17 @@ plaser et billede som baggrund til helle hjemmesiden der føljer med brugeren*/
 
 }
 
+a:hover{
+    color: hsl(81, 100%, 36%);
+}
 header{
-    
+    padding: 0.1rem;
     margin-top: 70px;
     background-color: hsl(150, 49%, 27%);
     text-align: center;
-    
 }
- a:hover{
-    color: hsl(81, 100%, 36%);
+header h1,header h2{
+    line-height: 2rem
 }
 
 nav{
@@ -41,7 +43,6 @@ nav{
     top: 0px;
     
 }
-
         nav a {
         background-color: hsl(150, 49%, 27%);
         padding: 10px;
@@ -57,34 +58,24 @@ nav{
         border-style: groove;
         }
         
+footer{
+    background-color: hsl(150, 49%, 27%);
+    padding: 6px;
+    color: hsl(40, 8%, 93%);
+    margin-top: 10px;
+    text-align: center;
+}      
 
 main{
     max-width: 1000px;
-    /* align-items: center; */
+    
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
     background-color: hsl(40, 8%, 93%);
 }
-article{
-    text-align: center;
-}
-article p{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 h1, h2 {
     color: hsl(81, 100%, 36%);
-    
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    text-shadow: -2px -2px  2px blue;
-    
-
     font-family: 'Julius Sans One', sans-serif;
 }
 h1{
@@ -99,6 +90,32 @@ h3{
     font-size: 1,5rem;
     line-height: 4rem;
 }
+article>p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.front-site article, .wiki-site article{
+    text-align: center;
+}
+.front-site h1, .front-site h2{
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-shadow: -2px -2px  2px blue; 
+}
+.front-site img, .wiki-site img{
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 20px
+}
+
+
 .large{
     font-size: large;
 }
@@ -106,27 +123,18 @@ h3{
     margin: 0px;
 }
 
-img{
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    
-}
-
-    a img{
-        margin-top: 0px;
-    }
 
 
 
 
-ul{
+.horizontal-liste{
     list-style-type: none;
     padding: 10px;
     overflow: hidden;
-    margin-left: 30px;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
-li{
+.horizontal-liste>li{
     float: left;
 }
 li a {
@@ -136,25 +144,27 @@ li a {
     /* mellemrum mellem individuelle elementer i en liste */
     padding: 11px;
 }
+.horizontal-liste a img{
+    margin-top: 0px;
+}
 
-
-footer{
-    background-color: hsl(150, 49%, 27%);
-    padding: 6px;
-    color: hsl(40, 8%, 93%);
-    margin-top: 10px;
-    text-align: center;
-}   
+ 
 
 
 
 .sidebar{
     background-color: gray;
     height: 150vh;
+    width: 12rem;
+    float: left;
+    margin-right: 1rem;
 }
 
 .sidebar p{
-    float: left;
+
+}
+.sidebar img{
+    margin: 0px;
 }
 
 
@@ -163,8 +173,7 @@ footer{
     
 }
 
-
-.blog img{
+.blog article>img{
     float: left;
     margin-top: 0px;
     margin-left: 10px;
@@ -174,21 +183,7 @@ footer{
     float: right;
 }
 
-div{
-    float: left;
-    width: 12rem;
-
-
-}
-div p{
-    float: right;
-}
-
-div img{
-    float: left;
-
-}
-.blogsite div h3{
+.blog span>h3{
     color: hsl(81, 100%, 36%);
     font-family: 'Coming Soon', sans-serif;
 }
