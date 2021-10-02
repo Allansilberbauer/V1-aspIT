@@ -98,33 +98,29 @@ article>p{
 
 
 
-.front-site article, .wiki-site article{
+
+
+.sidebar{
+    background-color:hsl(150, 20%, 80%);
+    height: 147vh;
+    width: 12rem;
+    float: left;
+    margin-right: 1rem;
+}
+.sidebar h3{
     text-align: center;
 }
-.front-site h1, .front-site h2{
-
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    text-shadow: -2px -2px  2px blue; 
+.sidebar p{
+margin-left: 2rem;
 }
-.front-site img, .wiki-site img{
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    margin-top: 20px
+.sidebar p>span{
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
 }
-
-
-.large{
-    font-size: large;
-}
-.margin0{
+.sidebar img{
     margin: 0px;
 }
-
-
-
 
 
 .horizontal-liste{
@@ -148,24 +144,41 @@ li a {
     margin-top: 0px;
 }
 
- 
 
 
-
-.sidebar{
-    background-color: gray;
-    height: 150vh;
-    width: 12rem;
-    float: left;
-    margin-right: 1rem;
+.large{
+    font-size: large;
 }
-
-.sidebar p{
-
-}
-.sidebar img{
+.margin0{
     margin: 0px;
 }
+
+
+
+
+
+
+.front-site article, .wiki-site article{
+    text-align: center;
+}
+.front-site h1, .front-site h2{
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-shadow: -2px -2px  2px blue; 
+}
+.front-site img, .wiki-site img{
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 20px
+}
+
+
+
+
+
 
 
 .blog article{
@@ -179,7 +192,7 @@ li a {
     margin-left: 10px;
     margin-right: 10px;
 }
-.blog span img{
+.blog span>img{
     float: right;
 }
 
