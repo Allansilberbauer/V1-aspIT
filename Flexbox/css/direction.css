@@ -1,0 +1,39 @@
+div{
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+div>div{
+    width: 100px; padding: 10px; color: #fff; box-sizing: border-box; font-size: 42px 
+}
+.c1{
+    background-color: red;
+    
+
+}
+.c2{
+    background-color: green;
+    
+
+}
+.c3{
+    background-color: blue;
+}
+.c4{
+    background-color: orange;
+    
+}
+.p1{
+    display: flex;
+}
+.p2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.p3{
+    flex-direction: column;
+}
+.p4{
+    flex-direction: column-reverse;
+}

@@ -99,7 +99,7 @@ article>p{
 
 
 
-
+/* laver en vertikal sidebar i venstre side */
 .sidebar{
     background-color:hsl(150, 20%, 80%);
     height: 147vh;
@@ -115,14 +115,14 @@ margin-left: 2rem;
 }
 .sidebar p>span{
     position: relative;
+    left:  1rem;
     bottom: 1rem;
-    left: 1rem;
 }
 .sidebar img{
     margin: 0px;
 }
 
-
+/* skal plaseres i en ul tag og vil der efter konvatere listen til en horizontal liste */
 .horizontal-liste{
     list-style-type: none;
     padding: 10px;
@@ -194,6 +194,7 @@ li a {
 }
 .blog span>img{
     float: right;
+    margin-right: 10px;
 }
 
 .blog span>h3{

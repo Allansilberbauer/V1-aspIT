@@ -1,0 +1,63 @@
+.p{
+    display: flex;
+    width: 570px;
+    background-color:whitesmoke;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+
+
+.c{
+    width: 180px;
+    height: 180px;
+    background-color: gray;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.width{
+    width: 200px;
+}
+.high{
+    height: 80px;
+}
+.p-high{
+    height: 8rem;
+}
+.margin-c{
+    margin-top: 50px;
+}
+.c-order1{
+    order: 1;
+}
+
+.c-order2{
+    order: 2;
+}
+
+.c-order3{
+    order: 3;
+}
+.flex-auto{
+    flex: auto;
+
+}
+.flex-end{
+    align-self: flex-end;
+}
+
+
