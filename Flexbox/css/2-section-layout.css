@@ -1,20 +1,39 @@
-.p{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+}
+.header, .footer{
+height: 50px;
+background-color: #666;
+}
+.content{
+background-color: #ccc;
+height: 100vh;
+}
+.columns{
+    height: 100vh;
     display: flex;
-    width: 570px;
-    background-color:whitesmoke;
-    margin: auto;
-    flex-wrap: wrap;
+}
+.article{
+    background-color: #ccc;
+}
+.sidebar{
+    width: 20%;
+    background-color: #999;
 }
 
 
 
-.c{
-    width: 180px;
-    height: 180px;
-    background-color: gray;
-    margin: 5px;
-    display: flex;
-}
+
+
+
+
+
 .yellowbox{
     width: 50px;
     height: 50px;

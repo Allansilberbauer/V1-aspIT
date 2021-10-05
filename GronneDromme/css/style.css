@@ -20,10 +20,15 @@ plaser et billede som baggrund til helle hjemmesiden der føljer med brugeren*/
 
 
 }
-
+/* gør links grønne //  kan plaseres på links og elementet oven over */
+.link-green, .link-green>a{
+    color: hsl(150, 49%, 27%);
+}
+/* giver alle links en grøn hover farve*/
 a:hover{
     color: hsl(81, 100%, 36%);
 }
+
 header{
     padding: 0.1rem;
     margin-top: 70px;
@@ -98,6 +103,16 @@ article>p{
 
 
 
+/* flexbox rælaterede ting */
+.container{
+    display: flex;
+}
+.space-around{
+    justify-content: space-around;
+}
+
+
+
 
 /* laver en vertikal sidebar i venstre side */
 .sidebar{
@@ -121,6 +136,7 @@ margin-left: 2rem;
 .sidebar img{
     margin: 0px;
 }
+
 
 /* skal plaseres i en ul tag og vil der efter konvatere listen til en horizontal liste */
 .horizontal-liste{
@@ -146,18 +162,27 @@ li a {
 
 
 
+/* diverse classes */
+
 .large{
     font-size: large;
 }
+/* fjærner al margin */
 .margin0{
     margin: 0px;
+}
+/* gaver en margin på 20px */
+.margin20{
+    margin: 20px
+}
+.link-line-remove, .link-line-remove>a{
+    text-decoration: none;
 }
 
 
 
 
-
-
+/* design dedikered til foresiden og wiki siderne*/
 .front-site article, .wiki-site article{
     text-align: center;
 }
@@ -172,7 +197,6 @@ li a {
 .front-site img, .wiki-site img{
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
-    margin-top: 20px
 }
 
 
@@ -180,7 +204,7 @@ li a {
 
 
 
-
+/* design dedikered til blog siden */
 .blog article{
     text-align: left;
     
