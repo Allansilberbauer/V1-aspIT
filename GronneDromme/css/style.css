@@ -107,6 +107,9 @@ article>p{
 .container{
     display: flex;
 }
+.flex-down{
+    flex-direction: column;
+}
 .space-around{
     justify-content: space-around;
 }
@@ -207,7 +210,6 @@ li a {
 /* design dedikered til blog siden */
 .blog article{
     text-align: left;
-    
 }
 
 .blog article>img{
