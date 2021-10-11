@@ -1,0 +1,114 @@
+
+body{
+    margin: 0;
+    background-color: hsl(0, 0%, 86%);
+    color: hsl(180, 25%, 25%);
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: none;
+}
+nav, footer{
+    background-color: hsl(27, 67%, 30%);
+    height: 7vh;
+}
+nav>img{
+    margin: 1vw;
+}
+
+main{
+    margin: 5vw;
+    line-height: 1.5rem;
+}
+
+
+.faktaboks{
+    background-color: hsla(0, 0%, 100%, 0.4)
+}
+
+h1,h2,h3 {
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    color: hsl(27, 67%, 30%);
+}
+
+
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: hsl(180, 25%, 25%);
+    margin-top: 4vh;
+}
+a:hover{
+    color: hsl(180, 25%, 45%);
+}
+a h3{
+    margin: 0;
+}
+
+
+
+
+/* flexbox rælaterede ting */
+.container{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-down{
+    flex-direction: column;
+}
+.space-around{
+    justify-content: space-around;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+
+.plase-right{
+    align-self: center;
+}
+.plase-end{
+    align-self: flex-end;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-auto{
+    flex: auto;
+}
+.flex-center{
+    align-items: center;
+}
+
+/* diverse classes */
+
+.large{
+    font-size: large;
+}
+/* fjærner al margin */
+.margin0{
+    margin: 0;
+}
+/* gaver en margin på 20px */
+.margin20{
+    margin: 20px
+}
+.link-line-remove, .link-line-remove>a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 500px)
+{
+   
+}

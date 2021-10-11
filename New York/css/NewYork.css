@@ -1,0 +1,108 @@
+.coll{
+    background-color: hsl(177, 43%, 81%);
+    background-color: hsl(248, 7%, 35%);
+    background-color:  hsl(200, 100%, 30%);
+    background-color: rgb(245, 245, 245);
+    background-color: rgb(33, 46%, 46%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+header{
+    width: 100%;
+} */
+body{
+    color: hsl(177, 43%, 10%);
+    background-color: hsl(177, 43%, 96%);
+}
+h1{
+    font-family:  sans-serif;
+    
+    padding: 3vh;
+    background-color: hsl(248, 7%, 35%);
+    color: hsl(177, 43%, 81%);
+    font-size: 5rem;
+    text-align: center;
+}
+h3{
+    font-family: sans-serif;
+    margin: 0rem 1rem 1rem 1rem;
+}
+article p{
+    margin: 1rem;
+}
+
+
+nav{
+    background-color: hsl(200, 100%, 30%);
+    padding: 0.5rem;
+}
+nav a{
+    padding: 0 0.2rem;
+}
+.border-right>a{
+    color: hsl(177, 43%, 81%);
+    border-right: 2px solid hsl(177, 43%, 10%);
+
+}
+
+
+footer{
+    background-color: hsl(200, 100%, 30%);
+    padding: 0.3vh;
+}
+footer p{
+    color: hsl(177, 43%, 81%);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+
+/* flexbox rælaterede ting */
+.container{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-down{
+    flex-direction: column;
+}
+.space-around{
+    justify-content: space-around;
+}
+.plase-right{
+    align-self: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-auto{
+    flex: auto;
+}
+.flex-center{
+    align-items: center;
+}
+
+/* diverse classes */
+
+.large{
+    font-size: large;
+}
+/* fjærner al margin */
+.margin0{
+    margin: 0px;
+}
+/* gaver en margin på 20px */
+.margin20{
+    margin: 20px
+}
+.link-line-remove, .link-line-remove>a{
+    text-decoration: none;
+}

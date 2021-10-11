@@ -95,11 +95,7 @@ h3{
     font-size: 1,5rem;
     line-height: 4rem;
 }
-article>p{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
 
@@ -113,7 +109,9 @@ article>p{
 .space-around{
     justify-content: space-around;
 }
-
+.flex-wrap{
+    flex-wrap: wrap;
+}
 
 
 
@@ -183,10 +181,10 @@ li a {
 }
 
 
-
+/* wiki-site article */
 
 /* design dedikered til foresiden og wiki siderne*/
-.front-site article, .wiki-site article{
+.front-site article{
     text-align: center;
 }
 .front-site h1, .front-site h2{
@@ -201,7 +199,11 @@ li a {
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-
+.front-site article>p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
