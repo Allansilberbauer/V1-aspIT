@@ -11,15 +11,20 @@
     <title>Fugleleksikon</title>
 </head>
 <body>
-    <nav class="container justify-end ">
+    <nav class="navcontainer">
        <img class="" src="img/bars-solid.svg" alt="bars-solid">
+
+        <div class="navcontainer-div">
+            <a href="index.html"><p>HOME</p></a>
+            <a href="#fly-bird"><p>FLYING BIRDS</p></a>
+            <a href="#no-fly-bird"><p>FLIGHTLESS BIRDS</p></a>
+        </div>
     </nav>
     <header>
-        <h1>
-            tekst
-        </h1>
+        <img src="img/Encyclopedia-header.jpg" alt="Encyclopedia-header"> 
     </header>
-    <main>
+    <main class="maincontainer">
+        
         <section>
             <h1>
                 BIRDS
@@ -28,15 +33,29 @@
                 <h2>
                     About birds 
                 </h2>
+                <img srcset="img/black-cockatoo-down-400w.jpg 400w, 
+                            img/black-cockatoo-down-700w.jpg 700w,
+                            img/black-cockatoo-down-1920w.jpg 1920w"
+                
+                sizes="(max-width:  500px) 400px,   (max-width: 1000px) 700px,  1920px"
+                src="img/black-cockatoo-down-1920w.jpg" alt="black cockatoo" >
                 <p>
                     Birds, also known as Aves or avian dinosaurs, are a group of endothermic vertebrates, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton. Birds live worldwide and range in size from the 5 cm (2 in) bee hummingbird to the 2.75 m (9 ft) ostrich. They rank as the world's most numerically successful class of tetrapods, with approximately ten thousand living species, more than half of these being passerine, or "perching" birds. Birds have wings whose development varies according to species; the only known groups without wings are the extinct moa and elephant birds. Wings, which evolved from forelimbs, gave birds the ability to fly, although further evolution has led to the loss of flight in some birds, including ratites, penguins, and diverse endemic island species of birds. The digestive and respiratory systems of birds are also uniquely adapted for flight. Some bird species of aquatic environments, particularly seabirds and some waterbirds, have further evolved for swimming.
                 </p>
             </article>
             <article>
-                <h2>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="img/Ostrich-400w-400h.jpg">
+                    <source media="(max-width: 700px)" srcset="img/true-god.png">
+                    <source media="(min-width: 701px)" srcset="img/Ostrich-1920w-1358h.jpg">
+                    <img src="img/Ostrich-1920w-1358h.jpg" alt="Ostrich">
+                </picture>
+
+                <h2 id="fly-bird">
                     Flying birds
                 </h2>
-                <div class="container flex-down">
+                
+                <div class="billedeliste">
                     <a href=""><h3>Parrot</h3> <img src="img/Parrot.jpg" alt="Parrot"></a>
                     <a href="baldeagle.html"><h3>Bald eagle </h3><img src="img/Bald-eagle.jpg" alt="Bald-eagle"></a>
                     <a href="bluebreastedkingfisher.html"><h3>Bluebreasted kingfisher</h3> <img src="img/Bluebreasted-Kingfisher.jpg" alt="Bluebreasted-Kingfisher"></a>
@@ -49,18 +68,22 @@
                 </div>
             </article>
             <article>
-                <h2 class="">
+                <h2 id="no-fly-bird">
                     Flightless birds
                 </h2>
-                <div class="container flex-down">
+                <div class="billedeliste">
                     <a class="margin0" href="penguin.html"><h3>Penguin</h3><img src="img/Penguin.jpg" alt="Penguin"></a>
                     <a href=""><h3>Ostrich</h3><img src="img/Ostrich.jpg" alt="Ostrich"></a>
+                    <a href="kiwi.html"><H3>Kiwi</H3><img src="img/the-bestest-kiwi-300w.png" alt="gamer"></a>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="navcontainer">
 
+        <div class="navcontainer-div">
+            <a href="kiwi.html">KIWI</a>
+        </div>
     </footer>
 </body>
 </html>

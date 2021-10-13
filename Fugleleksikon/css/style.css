@@ -12,19 +12,43 @@ nav, footer{
     background-color: hsl(27, 67%, 30%);
     height: 7vh;
 }
+footer{
+    margin-top: 1vh;
+}
 nav>img{
     margin: 1vw;
+}
+/* stopper navigations linksne fra at vise sig på mobil vertionen  */
+nav a{
+    display: none;
 }
 
 main{
     margin: 5vw;
-    line-height: 1.5rem;
+    background-color: hsl(0, 0%, 86%);
 }
-
-
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+}
+.navcontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.billedeliste , .billedeliste2{
+    display: flex;
+    flex-direction: column;
+}
 .faktaboks{
-    background-color: hsla(0, 0%, 100%, 0.4)
+    background-color: hsla(0, 0%, 100%, 0.4);
+    display: flex;
+    flex-direction: column;
+    
 }
+img{
+    max-width: 100%;
+}
+
 
 h1,h2,h3 {
     font-family: 'Lato', sans-serif;
@@ -33,9 +57,17 @@ h1{
     font-size: 3rem;
     color: hsl(27, 67%, 30%);
 }
+.wiki-overskrift h1, .wiki-overskrift h2{
+    font-size: 2rem;
+    color: hsl(180, 25%, 25%);
+    margin-bottom: 1rem;
+}
+p, h3{
+    line-height: 1.5rem;
+}
 
 
-a{
+.billedeliste>a , .billedeliste2>a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +77,9 @@ a{
 }
 a:hover{
     color: hsl(180, 25%, 45%);
+}
+a img:hover{
+    opacity: 90%;
 }
 a h3{
     margin: 0;
@@ -99,6 +134,9 @@ a h3{
 .margin20{
     margin: 20px
 }
+.padding{
+    padding: 1rem;
+}
 .link-line-remove, .link-line-remove>a{
     text-decoration: none;
 }
@@ -110,5 +148,96 @@ a h3{
 
 @media only screen and (min-width: 500px)
 {
-   
+
+    /* giver tablet og pc et baggrunds billede til hele hjemmesiden */
+    body{
+        background-image: url(../img/minecraft-parrot.jpg);
+        background-attachment: fixed;
+    }
+
+    main{
+        padding: 1rem;
+    }
+    .billedeliste2 ,.billedeliste{
+        flex-direction: row;
+       flex-wrap: wrap;
+    }
+   .billedeliste{
+       justify-content: space-between;
+   }
+   .billedeliste2 img{
+       margin-right: 2rem;
+   }
+   .billedeliste img , .billedeliste2 img{
+       width: 280px;
+   }
+   header{
+       margin-top: 5vh;
+       display: block;
+       text-align: center;
+       max-width: 60%;
+       margin: auto;
+       margin-top: 1rem;
+   }
+   header img{
+       max-width: 100%;
+       width: auto;
+       height: auto;
+   }
+   main{
+       max-width: 60%;
+       margin: 0;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   nav img{
+       display: none;
+   }
+   /* for nav linksne til at vise sig  */
+   nav a{
+       display: block
+   }
+   /* giver nav og footer en relativ højde på 6%vh*/
+   nav,footer{
+       height: 6vh;
+   }
+
+/* styre nav udsene*/
+/* navcontainer-div classen er parent til linksne og sørger for at link gruppen altid holder sig minst 10%vw væk fra kanten af siden  */
+   .navcontainer-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+   }
+   .navcontainer a{
+       text-decoration: none;
+       color: hsl(0, 0%, 86%); 
+       height: 100%;
+       display: flex;
+       align-items: center;
+       padding-left: 1rem;
+       padding-right: 1rem;
+   }
+   .navcontainer-div a:hover{
+       background-color: hsla(0, 0%, 100%, 0.4);
+       opacity: 90%;
+   }
+
+
+
+}   
+@media only screen and (min-width: 1000px)
+{
+    .faktaboks{
+        flex-direction: row;
+    }
+    .faktaboks li{
+        margin-top: 1vh;
+    }
 }
+   
