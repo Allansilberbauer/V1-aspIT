@@ -1,0 +1,174 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    background-color: black;
+    padding: 7px;
+}
+main picture img{
+    max-width: 100%;
+    width: 100vw;
+}
+nav{
+    height: 3rem;
+}
+nav{
+    background-color: hsl(60, 100%, 60%);
+}
+nav img{
+    margin-right: 8px;
+}
+footer{
+    background-color: black;
+    
+}
+
+.navcontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.cykelliste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.cykelliste>a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 4vh;
+}
+a p{
+    font-size: 1.5rem;
+}
+.embed {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+    padding-top: 0.5rem;
+}
+.iframe{
+    width: 300px;
+    height: 180px;
+}
+
+.faktaboks{
+    background-color: hsl(0, 0%, 83%);
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    
+}
+.faktaboks-div{
+    display: flex;
+    flex-direction: column;
+}
+.footercontainer{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 3vw;
+}
+.footercontainer-div{
+    display: flex;
+    flex-direction: column;
+    
+    color: hsl(60, 100%, 60%);
+    
+}
+.footercontainer-div>a{
+    text-decoration: none;
+    color: white;
+}
+
+/* flexbox rælaterede ting */
+.container{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-down{
+    flex-direction: column;
+}
+.space-around{
+    justify-content: space-around;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-center{
+    justify-content: center;
+}
+
+
+.plase-right{
+    align-self: center;
+}
+.plase-end{
+    align-self: flex-end;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-auto{
+    flex: auto;
+}
+.flex-center{
+    align-items: center;
+}
+
+/* diverse classes */
+
+.large{
+    font-size: large;
+}
+/* fjærner al margin */
+.margin0{
+    margin: 0;
+}
+/* gaver en margin på 20px */
+.margin20{
+    margin: 20px
+}
+.padding{
+    padding: 1rem;
+}
+.link-line-remove, .link-line-remove>a{
+    text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: 700px){
+
+    .cykelliste{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: auto;
+    }
+    .cykelliste img{
+        width: 250px;
+    }
+    .faktaboks-div{
+        max-width: 600px;
+    }
+    .faktaboks{
+        align-items: center;
+    }
+    .iframe{
+        width: 600px;
+        height: 380px;
+    }
+}
