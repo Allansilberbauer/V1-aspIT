@@ -1,0 +1,175 @@
+header{
+   background-color: hsl(0, 0%, 80%);
+   
+   flex-direction: column-reverse;
+} 
+header img{
+    width: 50vw;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    
+}
+/* gay */
+nav, header, main, main section, footer{
+    display: flex;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+nav, footer{
+    height: 2.3rem;
+    padding: 0 0.5rem;
+    
+}
+nav h5{
+    color: white;
+    font-size: 1.5rem;
+    
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.top{
+    background-color: hsl(0, 0%, 34%);
+}
+.side{
+    background-color: hsla(233, 25%, 26%, 0.8);
+    justify-content: flex-end;
+}
+
+ul{
+    flex-direction: row;
+    display: none;
+}
+li{
+    list-style: none;
+}
+
+
+
+main{
+    align-items: center;
+}
+
+main section{
+    width: 85vw;
+}    
+
+main, main section{
+    flex-direction: column;
+    
+}
+
+
+
+article{
+    margin: 1rem 0;
+}
+article h2{
+    color: hsl(0, 0%, 34%);
+    padding-bottom: 1rem;
+    border-bottom: 2px solid hsl(0, 0%, 80%);
+    font-size: 1.3rem;
+}
+article p:first-of-type::first-line /* Første linje i første p-tag i en article */
+{
+    font-weight: bolder;
+    color: hsla(233, 25%, 26%, 0.8);
+    padding: 1rem;
+    font-size: large;
+}
+article p{
+    margin: 0;
+    
+}
+article img{
+    float: left;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+
+footer{
+    background-color: hsl(0, 0%, 34%);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 80%;
+}
+
+
+
+@media only screen and (min-width: 500px){
+
+
+    header{
+        flex-direction: row;
+        
+    }
+    header img{
+        height: 5.5rem;
+    }
+    
+    main{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    article h2{
+        font-family: cursive;
+    }
+
+    section{
+        margin: 1rem;
+    }
+
+}
+@media only screen and (min-width: 900px){
+
+
+    header{
+        justify-content: space-between;
+
+    }
+    header img{
+        width: auto;
+        height: 6.5rem;
+    }
+
+    nav img, nav h5{
+        display: none;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .top a{
+        border-right: 2px solid white;
+        padding-right: 0.5rem;
+    }
+
+
+
+
+
+
+}
+
