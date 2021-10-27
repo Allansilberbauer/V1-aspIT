@@ -137,7 +137,9 @@ margin-left: 2rem;
 .sidebar img{
     margin: 0px;
 }
-
+.nomove{
+    resize: none;
+}
 
 /* skal plaseres i en ul tag og vil der efter konvatere listen til en horizontal liste */
 .horizontal-liste{
@@ -176,6 +178,9 @@ li a {
 .margin20{
     margin: 20px
 }
+.margintop70{
+    margin-top: 70px;
+}
 .link-line-remove, .link-line-remove>a{
     text-decoration: none;
 }
@@ -189,11 +194,13 @@ li a {
 }
 .front-site h1, .front-site h2{
 
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     
     text-shadow: -2px -2px  2px blue; 
+}
+.front-site h2{
+    width: 80%;
 }
 .front-site img, .wiki-site img{
     border-bottom-left-radius: 25px;
@@ -230,3 +237,9 @@ li a {
     font-family: 'Coming Soon', sans-serif;
 }
 
+
+
+/* kontakt os side */
+.kontakt-side>main{
+    margin-top: 70px;
+}
