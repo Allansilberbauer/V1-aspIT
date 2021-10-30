@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body class="kontakt-side">
+    
     <nav>
       <a href="index.html" >Forside</a>
 
@@ -27,12 +28,13 @@
 
       <a href="blog.html">vores blog</a>
     </nav>
-
-    <main class="container flex-down">
+    
+    <main class="container flex-down " id="main">
         <section class="">
             <h1>Kontakt os</h1>
         </section>
-        <form method="get">
+        
+        <form method="get" action="kontaktlanding.html">
             <p>
                 <label for="name">Navn:</label>
                 <input type="text" name="name" required>
@@ -45,33 +47,151 @@
                 <label for="textbox">Besked:</label><br>
                 <textarea class="nomove" name="textbox" cols="50" rows="10" placeholder="skriv her..."></textarea>
             </p>
-            <p>
-                <label for="checkplant">Ny plante til databasen:</label>
-                <input type="checkbox" name="checkplant" >
-            </p>
-            <p>
-                <label for="plantname">Plantens danske navn:</label>
-                <input type="text" name="plantname">
-            </p>
-            <p>
-                <label for="plantver">Plantens variant:</label>
-                <input type="text" name="plantver">
-            </p>
-            <p>
-                <label for="plantBname">Plantens botaniske navn</label>
-                <input type="text" name="plantBname">
-            </p>
-            <p>
-                <label for=""></label>
-                <input type="text" name="">
-            </p>
-        </form>
-    </main>
+            
+            
+            <label for="checkplant">Ny plante til databasen:</label>
+            <input class="box-yn" type="checkbox" name="checkplant" >
 
-    <footer>
-        <p>© Grønne Drømme Danmarks plante wiki 2021</p>
+            <div class="plantbox" id="r">
+                <p>
+                    <label for="plantname">Plantens danske navn:</label>
+                    <input type="text" name="plantname">
+                </p>
+                <p>
+                    <label for="plantver">Plantens variant:</label>
+                    <input type="text" name="plantver">
+                </p>
+                <p>
+                    <label for="plantBname">Plantens botaniske navn:</label>
+                    <input type="text" name="plantBname">
+                </p>
+                <p>
+                    <label for="planttype">Platens type:</label>
+                    <input type="text" name="planttype">
+                </p>
+                <p>
+                    <label class="fill" for="planthight">Plantens højde:</label>
+                    <input type="number" name="planthight" min="1">
+                    <label for="planthight">&nbsp;   cm</label>
+                </p>
+                <p>
+                    <label class="fill" for="plantlong">Plantens rækkerafstand:</label>
+                    <input type="number" name="plantlong" min="1">
+                    <label for="plantlong">&nbsp;   cm</label>
+                </p>
+                <p>
+                    <label class="fill" for="plantseed">Plantens sådybte:</label>
+                    <input type="number" name="plantseed" min="1">
+                    <label for="plantseed">&nbsp;   cm</label>
+                </p>
+                <p>
+                    <label for="plantlight">Plantens lysforhold:</label>
+                    <select name="plantlight">
+                        <option value="fuldsol">Fuld sol</option>
+                        <option value="lidtsol">Lidt sol</option>
+                        <option value="skygge">Skygge</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="plantforspires">
+                        Planten forspires i: <br>
+                        (vælg flere med ctrl eller shift)
+                    </label>
+                    <select name="plantforspires" size="12" multiple>
+                        <option value="mon1">Januar</option>
+                        <option value="mon2">Febuar</option>
+                        <option value="mon3">Marts</option>
+                        <option value="mon4">April</option>
+                        <option value="mon5">Maj</option>
+                        <option value="mon6">Juni</option>
+                        <option value="mon7">Juli</option>
+                        <option value="mon8">August</option>
+                        <option value="mon9">September</option>
+                        <option value="mon10">Oktober</option>
+                        <option value="mon11">November</option>
+                        <option value="mon12">December</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="plantudplantes">
+                        Planten udplantes i: <br>
+                        (vælg flere med ctrl eller shift)
+                    </label>
+                    <select name="plantudplantes" size="12" multiple>
+                        <option value="mon1">Januar</option>
+                        <option value="mon2">Febuar</option>
+                        <option value="mon3">Marts</option>
+                        <option value="mon4">April</option>
+                        <option value="mon5">Maj</option>
+                        <option value="mon6">Juni</option>
+                        <option value="mon7">Juli</option>
+                        <option value="mon8">August</option>
+                        <option value="mon9">September</option>
+                        <option value="mon10">Oktober</option>
+                        <option value="mon11">November</option>
+                        <option value="mon12">December</option>
+                    </select>
+                </p>
+                <p>
+                    <label class="fill" for="plantgrowtime">Planten sspirer efter ca. :</label>
+                    <input type="number" name="plantseed" min="1">
+                    <label for="plantseed">&nbsp;  dage</label>
+                </p>
+                <p>
+                    
+                    <label class="fill" for="plantcommi">Planten er klar til høst efter ca. :</label>
+                    <input type="number" name="plantcommi" min="1">
+                    <label for="plantseed">&nbsp;  dage</label>
+                </p>
+                <p>
+                    <label for="plantinfo">Plantebeskrivelse:</label><br>
+                    <textarea class="nomove" name="plantinfo" cols="50" rows="10" placeholder="skriv her..."></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="indsend">
+                </p>
+            </div>
+        </form>
+     
+    </main>
+    <footer class="container">
+        <p class="fill">© Grønne Drømme Danmarks plante wiki 2021</p>
+        <p>
+            <button onclick="document.getElementById('main').classList.add('rave-start');">rave start</button>
+            <button onclick="document.getElementById('main').classList.remove('rave-start');">rave stop</button>
+
+
+            
+            <!-- <label for="rave">rave</label>
+            <input type="checkbox" name="rave" id="ravebutton" onfocus="myFunction()"> -->
+        </p>
     </footer>
     
+   
+
+    <!-- <script>
+
+        var checkbox = document.getElementById("ravebutton");
+
+        var main = document.getElementById("main");
+
+        function myFunction(){
+
+        if (checkbox.checked == true){
+
+        main.classList.add('rave-start');
+        
+        }
+        if (checkbox.checked == false){
+
+        main.classList.remove('rave-start');
+        }
+        else{
+        
+        main.classList.remove('rave-start');
+        }
+    }
+    </script> -->
 </body>
 </html>
 

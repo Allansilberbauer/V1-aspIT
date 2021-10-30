@@ -69,10 +69,14 @@ footer{
     color: hsl(40, 8%, 93%);
     margin-top: 10px;
     text-align: center;
-}      
+    justify-content: center;
 
+}      
+    footer a{
+        color: hsl(40, 8%, 93%);
+    }
 main{
-    max-width: 1000px;
+    width: 1000px;
     
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +116,12 @@ h3{
 .flex-wrap{
     flex-wrap: wrap;
 }
-
+.fill{
+    flex: auto;
+}
+.justify-flex-start{
+    justify-content: flex-start;
+}
 
 
 /* laver en vertikal sidebar i venstre side */
@@ -186,6 +195,17 @@ li a {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* wiki-site article */
 
 /* design dedikered til foresiden og wiki siderne*/
@@ -240,6 +260,117 @@ li a {
 
 
 /* kontakt os side */
+.kontakt-side main{
+    min-height: 90vh;
+}
+.kontakt-side form{
+    margin-left: 5vw;
+    
+}
+.kontakt-side h1{
+    margin-left: calc(4.69vw - 1px);
+}
 .kontakt-side>main{
     margin-top: 70px;
 }
+.kontakt-side form p{
+    display: flex;
+    /* margin-left: 5vw; */
+    justify-content: space-between;
+    max-width: 700px;
+}
+.kontakt-side input, .kontakt-side textarea{
+    background-color: lightgray;
+}
+.kontakt-side input[type=text],.kontakt-side input[type=email]{
+    width: 20rem;
+}
+.kontakt-side input[type=number]{
+    width: 4rem;
+}
+.kontakt-side textarea{
+    width: 20rem;
+}
+.kontakt-side select{
+    width: 7rem;
+}
+.kontakt-side input:focus, .kontakt-side textarea:focus{
+    background-color: white;
+}
+
+/* får check boxen til at folde ting ud */
+.plantbox{
+    display: none;
+}
+
+.box-yn:checked ~.plantbox{
+    display: block;
+    
+}
+
+
+
+
+
+/* landing side */
+
+.landing>main{
+    min-height: 90vh;
+}
+.landing>main>p, .landing>main>h2{
+    margin-left: 5vw;
+}
+
+
+
+.rave-start{
+    
+    
+    background-color: red;
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    }
+    
+    .rave:checked ~.rave-start {
+        opacity: 100%;
+    }
+    
+    @keyframes example {
+    0%   {background-color: red;}
+    12%   {background-color: green;}
+    25%  {background-color: yellow;}
+    37%   {background-color: gray;}
+    50%  {background-color: blue;}
+    63%   {background-color: purple;}
+    75%  {background-color: pink;}
+    88%   {background-color: white;}
+    100% {background-color: red;}
+    55%  {background-color: yellowgreen;}
+    }
+/* 
+div#r{
+    
+    
+    background-color: red;
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    }
+    
+    div#r:hover {
+        opacity: 100%;
+    }
+    
+    @keyframes example {
+    0%   {background-color: red;}
+    12%   {background-color: green;}
+    25%  {background-color: yellow;}
+    37%   {background-color: gray;}
+    50%  {background-color: blue;}
+    63%   {background-color: purple;}
+    75%  {background-color: pink;}
+    88%   {background-color: white;}
+    100% {background-color: red;}
+    55%  {background-color: yellowgreen;}
+    } */
